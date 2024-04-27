@@ -1,14 +1,13 @@
-import './App.css'
+import "./App.css";
+import Map from "./components/Map";
+import MainPage from "./MainPage";
 
 function App() {
-
   return (
     <>
-  <h1>
-      Hello world!
-    </h1>
+      <MainPage/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

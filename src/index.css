@@ -1,6 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .textField__input {
+    @apply mt-2 w-full rounded-xl py-3 px-4  border-2 border-gray-200 hover:border-primary-500 focus:border-primary-500 
+    focus:shadow-md focus:shadow-primary-300 transition-all duration-300 ease-linear
+  }
+  .btn {
+    @apply px-3 py-1 font-bold rounded-xl transition-all duration-300;
+  }
+  .btn--primary {
+    @apply px-4 py-3 bg-primary-900 text-white hover:bg-primary-800 shadow-lg shadow-primary-300;
+  }
+  .btn--secondary {
+    @apply bg-secondary-600 text-secondary-100;
+  }
+  .btn--outline {
+    @apply border border-secondary-700 text-secondary-700;
+  }
+  .btn--danger {
+    @apply border border-rose-700 text-rose-700;
+  }
+}
 @font-face {
   font-family: "Vazir";
   font-style: normal;
@@ -57,6 +79,7 @@ table th {
   border-bottom: 1px solid gainsboro;
   text-align: right;
   white-space: nowrap;
+  text-align: center;
 }
 
 table th {
@@ -70,4 +93,7 @@ table td {
   font-size: 0.85rem;
   padding: 1rem 1rem;
   color: black;
+}
+table td span{
+  cursor: pointer;
 }
